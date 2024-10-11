@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D533DEA42CB90E89008DC0E4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D533DEA32CB90E89008DC0E4 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D5E62D1E2CB65C8F00049856 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D533DEA42CB90E89008DC0E4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = JobHunter;
 			packageProductDependencies = (
+				D533DEA32CB90E89008DC0E4 /* Alamofire */,
 			);
 			productName = JobHunter;
 			productReference = D5E62D0D2CB65C8A00049856 /* JobHunter.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = D5E62D042CB65C8A00049856;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D533DEA22CB90E89008DC0E4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D5E62D0E2CB65C8A00049856 /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D533DEA22CB90E89008DC0E4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D533DEA32CB90E89008DC0E4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D533DEA22CB90E89008DC0E4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5E62D052CB65C8A00049856 /* Project object */;
 }

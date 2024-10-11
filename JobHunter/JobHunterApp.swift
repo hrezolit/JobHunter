@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct JobHunterApp: App {
+    @StateObject private var coordinator = AppCoordinator()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            coordinator.currentView
+                .onAppear {
+                    coordinator.showLoginView()
+                }
         }
     }
 }
