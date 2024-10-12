@@ -1,0 +1,39 @@
+
+[
+    {
+        "id": "1",
+        "title": "Программист Swift",
+        "company": "TechCorp",
+        "address": {
+            "town": "Москва",
+            "street": "Улица Ленина",
+            "building": "12"
+        },
+        "experience": {
+            "previewText": "2 года",
+            "fullText": "2-3 года работы с iOS"
+        },
+        "publishedDate": "2023-10-08",
+        "salary": "150,000 руб.",
+        "description": "Мы ищем опытного разработчика для работы над проектами iOS...",
+        "isFavorite": false
+    },
+    {
+        "id": "2",
+        "title": "Frontend-разработчик",
+        "company": "Web Solutions",
+        "address": {
+            "town": "Санкт-Петербург",
+            "street": "Проспект Невский",
+            "building": "45"
+        },
+        "experience": {
+            "previewText": "3 года",
+            "fullText": "3-4 года работы с JavaScript и React"
+        },
+        "publishedDate": "2023-09-25",
+        "salary": "120,000 руб.",
+        "description": "Нужен опытный фронтенд-разработчик для создания SPA-приложений...",
+        "isFavorite": false
+    }
+]

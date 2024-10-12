@@ -8,7 +8,7 @@
 import Foundation
 
 struct Vacancy: Decodable, Identifiable {
-    let id: UUID
+    let id: String
     let title: String
     let company: String
     let address: Address
@@ -23,7 +23,7 @@ struct Vacancy: Decodable, Identifiable {
         let street: String?
         let building: String?
     }
-    
+
     struct Experience: Decodable {
         let previewText: String
         let fullText: String?

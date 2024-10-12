@@ -13,12 +13,15 @@ struct VerificationView: View {
     
     var body: some View {
         VStack(spacing: 16) {
+            
             Text("Отправили код на example@mail.ru")
                 .font(.headline)
             
             Text("Напишите его, чтобы подтвердить, что это вы, а не кто-то другой входит в личный кабинет")
                 .font(.subheadline)
                 .padding(.bottom)
+            
+            Spacer()
             
             TextField("Введите код", text: $viewModel.code)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -37,22 +40,6 @@ struct VerificationView: View {
             Button(action: {
                 viewModel.validateCode()
                 if viewModel.isCodeValid {
-                    // Перейти к главному экрану или другому действию
-                }
-            }) {
-                Text("Подтвердить")
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(viewModel.isCodeValid ? Color.blue : Color.gray)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-            }
-            .disabled(!viewModel.isCodeValid)
-            .padding(.horizontal)
-            
-            Button(action: {
-                viewModel.validateCode()
-                if viewModel.isCodeValid {
                     coordinator?.showMainView()
                 }
             }) {
@@ -65,7 +52,6 @@ struct VerificationView: View {
             }
             .disabled(!viewModel.isCodeValid)
             .padding(.horizontal)
-            
             
             Spacer()
         }

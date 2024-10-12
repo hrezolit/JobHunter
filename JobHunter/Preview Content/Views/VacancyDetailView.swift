@@ -63,7 +63,7 @@ struct VacancyDetailView_Previews: PreviewProvider {
     static var previews: some View {
         // Пример вакансии для предпросмотра
         let exampleVacancy = Vacancy(
-            id: UUID(),
+            id: "1234",
             title: "Программист Swift",
             company: "TechCorp",
             address: Vacancy.Address(town: "Москва", street: "Улица Ленина", building: "12"),
